@@ -4,8 +4,37 @@ import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-// var numbers = [3, 56, 2, 48, 5];
+function square(x) {
+  return x * x;
+}
 
+// can also be written  - using an anonymous function
+var numbers = [3, 56, 2, 48, 5];
+
+const newNumbers = numbers.map(function (x) {
+  return x * x;
+});
+
+console.log(newNumbers);
+
+// can also be written
+const sqaureNumbers = numbers.map((x) => {
+  return x * x;
+});
+
+console.log(sqaureNumbers);
+
+// can also be written
+const timesNumbers = numbers.map((x) => {
+  return x * x;
+});
+
+console.log(timesNumbers);
+
+//within a single statement can also be written
+
+const simpleSquare = numbers.map((x) => x * x);
+console.log(simpleSquare);
 ////Map -Create a new array by doing something with each item in an array.
 // const newNumbers = numbers.map(function (x) {
 //   return x * 2;

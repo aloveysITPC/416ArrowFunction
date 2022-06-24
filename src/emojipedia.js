@@ -1,3 +1,4 @@
+//array
 const emojipedia = [
   {
     id: 1,
