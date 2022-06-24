@@ -35,6 +35,7 @@ console.log(timesNumbers);
 
 const simpleSquare = numbers.map((x) => x * x);
 console.log(simpleSquare);
+
 ////Map -Create a new array by doing something with each item in an array.
 // const newNumbers = numbers.map(function (x) {
 //   return x * 2;
